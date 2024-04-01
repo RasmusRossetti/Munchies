@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "sfpro";
+  src: url("/fonts/SFPRODISPLAYHEAVYITALIC.OTF") format("opentype");
+  font-weight: "500";
+  font-style: "normal";
+}
+
+h1 {
+  font-family: sfpro !important;
+}
