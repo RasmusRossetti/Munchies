@@ -3,17 +3,18 @@ import Image from "next/image"
 import { Resturant } from "../lib/interface"
 import { urlFor } from "../lib/sanity"
 import Link from "next/link"
-import { useEffect, useState } from "react"
+
+interface Props {
+  resturants: Resturant[]
+  filteredRestaurants: Resturant[]
+  noResults: Boolean
+}
 
 export default function Restaurants({
   resturants,
   filteredRestaurants,
   noResults
-}: {
-  resturants: Resturant[]
-  filteredRestaurants: Resturant[]
-  noResults: Boolean
-}) {
+}: Props) {
   // Function to sort filtered restaurants with closed ones last
   const sortFilteredRestaurants = (restaurants: Resturant[]) => {
     const openRestaurants = restaurants.filter(
