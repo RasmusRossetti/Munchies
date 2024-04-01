@@ -1,5 +1,5 @@
 import { Navbar } from "../components/Navbar"
-import { LeftSideBar } from "../leftsidebar/page"
+import LeftSideBar from "../leftsidebar/LeftSideBar"
 import { Resturant } from "../lib/interface"
 import { client } from "../lib/sanity"
 
@@ -20,7 +20,7 @@ async function getResturants() {
   return data
 }
 
-export default async function Resturants() {
+export default async function Layout() {
   const resturants: Resturant[] = await getResturants()
   console.log(resturants)
   return (

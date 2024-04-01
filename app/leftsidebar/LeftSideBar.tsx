@@ -3,11 +3,11 @@ import React, { useState } from "react"
 import { Resturant } from "../lib/interface"
 import { urlFor } from "../lib/sanity"
 import Image from "next/image"
-import Restaurant from "../resturantslayout/resturant"
-
-export const LeftSideBar: React.FC<{
+import Restaurant from "../resturants/Resturant"
+interface Props {
   resturants: Resturant[]
-}> = ({ resturants }) => {
+}
+export default function LeftSideBar({ resturants }: Props) {
   const [filteredRestaurants, setFilteredRestaurants] = useState<Resturant[]>(
     []
   )
