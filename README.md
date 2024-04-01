@@ -7,7 +7,7 @@ To run the Munchies project, follow these steps:
 1. **Navigate to Munchies Folder:**
 
    ```sh
-   cd munchies
+   cd Munchies
    ```
 
 ```sh
