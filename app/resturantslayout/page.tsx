@@ -10,11 +10,11 @@ interface Props {
   noResults: Boolean
 }
 
-export const Restaurant: React.FC<Props> = ({
+export default function Restaurant({
   resturants,
   filteredRestaurants,
   noResults
-}) => {
+}: Props): JSX.Element {
   // Function to sort filtered restaurants with closed ones last
   const sortFilteredRestaurants = (restaurants: Resturant[]) => {
     const openRestaurants = restaurants.filter(

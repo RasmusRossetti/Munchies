@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { Resturant } from "../lib/interface"
 import { urlFor } from "../lib/sanity"
 import Image from "next/image"
-import { Restaurant } from "../resturantslayout/page"
+import Restaurant from "../resturantslayout/page"
 
 export const LeftSideBar: React.FC<{
   resturants: Resturant[]
