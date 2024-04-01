@@ -5,22 +5,26 @@ export default async function Home() {
   return (
     <div className="bg-[#00703A] min-h-screen flex flex-col justify-center items-center p-10">
       <div className="absolute top-8 left-8">
-        <Image
-          src="/munchies-white.svg"
-          alt="munchies Logo"
-          className="hidden md:block"
-          width={400}
-          height={24}
-          priority
-        />
-        <Image
-          src="/munchies-white.svg"
-          alt="munchies Logo"
-          className="md:hidden w-full"
-          width={400}
-          height={24}
-          priority
-        />
+        <Link href={"/"}>
+          <Image
+            src="/munchies-white.svg"
+            alt="munchies Logo"
+            className="hidden md:block"
+            width={400}
+            height={24}
+            priority
+          />
+        </Link>
+        <Link href={"/"}>
+          <Image
+            src="/munchies-white.svg"
+            alt="munchies Logo"
+            className="md:hidden w-full"
+            width={400}
+            height={24}
+            priority
+          />
+        </Link>
       </div>
       <div className="text-left">
         <div className="flex flex-col ">
