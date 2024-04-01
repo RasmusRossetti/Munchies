@@ -20,7 +20,7 @@ async function getResturants() {
   return data
 }
 
-export default async function Home() {
+export default async function Resturants() {
   const resturants: Resturant[] = await getResturants()
   console.log(resturants)
   return (

@@ -40,7 +40,7 @@ export default async function Home() {
           </p>
           <Link
             className="hidden md:block w-[50%] md:w-[30%] mt-6 px-10 py-2  text-white border-solid border-[1px] border-white rounded-md hover:bg-white transition-all hover:text-[#00703A]"
-            href={"/startpage"}
+            href={"/resturants"}
           >
             Continue
           </Link>
@@ -48,7 +48,7 @@ export default async function Home() {
       </div>
       <Link
         className="absolute md:hidden bottom-4 w-[90%] text-center  mt-6 px-10 py-2  text-white border-solid border-[1px] border-white rounded-md hover:bg-white transition-all hover:text-[#00703A]"
-        href={"/startpage"}
+        href={"/resturants"}
       >
         Continue
       </Link>
