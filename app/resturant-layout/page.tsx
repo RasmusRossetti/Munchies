@@ -1,4 +1,4 @@
-import { Navbar } from "../components/Navbar"
+import { Navbar } from "../components/navbar/Navbar"
 import LeftSideBar from "../leftsidebar/LeftSideBar"
 import { Resturant } from "../lib/interface"
 import { client } from "../lib/sanity"
