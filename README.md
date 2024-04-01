@@ -10,8 +10,13 @@ To run the Munchies project, follow these steps:
    cd munchies
    ```
 
-   npm install
-   npm run dev
+```sh
+npm install
+```
+
+```sh
+npm run dev
+```
 
 2. **Navigate to sanity Folder:**
 
@@ -19,5 +24,10 @@ To run the Munchies project, follow these steps:
   cd sanity
 ```
 
+```sh
 npm install
+```
+
+```sh
 npm run dev
+```
