@@ -48,13 +48,13 @@ export default function Restaurant({
                             className={`p-2 rounded-full flex h-[30px] mt-3 ml-4 border-[#0000001A] border-solid border-[0.6px] `}
                           >
                             <div
-                              className={`w-3 h-3 rounded-full mr-2 mt-[2px]  ${
+                              className={`w-3 h-3 rounded-full mr-2 mt-[1px]  ${
                                 restaurant.openOrClosed === "open"
                                   ? "bg-[#00703A]"
                                   : "bg-black"
                               }`}
                             />
-                            <p className="text-lg font-semibold -mt-2">
+                            <p className="text-md -mt-2">
                               {restaurant.openOrClosed}
                             </p>
                           </div>
@@ -82,14 +82,14 @@ export default function Restaurant({
                           />
                         </div>
                         {restaurant.openOrClosed === "closed" && (
-                          <div className="relative bottom-5 bg-[#FAFAFA] border-solid border-[0.6px] border-[#0000001A] rounded-md text-center w-[60%] p-1 m-auto">
+                          <div className="relative bottom-6 bg-[#FAFAFA] border-solid border-[0.6px] border-[#0000001A] rounded-md text-center w-[60%] p-1 m-auto">
                             Opens tomorrow at 12
                           </div>
                         )}
                       </div>
                       <div className="flex-grow flex items-end justify-between p-4">
                         <p
-                          className={`text-lg font-semibold ${
+                          className={`text-[24px] font-normal ${
                             restaurant.openOrClosed === "closed"
                               ? "opacity-50"
                               : ""
@@ -98,7 +98,7 @@ export default function Restaurant({
                           {restaurant.name}
                         </p>{" "}
                         <div
-                          className={`w-6 h-6 bg-[#00703A] rounded-full flex justify-center items-center ${
+                          className={`w-8 h-8 bg-[#00703A] rounded-full flex justify-center items-center ${
                             restaurant.openOrClosed === "closed"
                               ? "opacity-50"
                               : ""
@@ -145,13 +145,13 @@ export default function Restaurant({
                           }`}
                         >
                           <div
-                            className={`w-3 h-3 rounded-full mr-2 mt-[2px]  ${
+                            className={`w-3 h-3 rounded-full mr-2 mt-[1px]  ${
                               restaurant.openOrClosed === "open"
                                 ? "bg-[#00703A]"
                                 : "bg-black"
                             }`}
                           />
-                          <p className="text-lg font-semibold -mt-2">
+                          <p className="text-md -mt-2">
                             {restaurant.openOrClosed}
                           </p>
                         </div>
@@ -178,7 +178,7 @@ export default function Restaurant({
                       </div>
                       {/* Display "Opens tomorrow at 12" message if restaurant is closed */}
                       {restaurant.openOrClosed === "closed" && (
-                        <div className="relative bottom-5 bg-[#FAFAFA] border-solid border-[0.6px] border-[#0000001A] rounded-md text-center w-[60%] p-1 m-auto">
+                        <div className="relative bottom-6 bg-[#FAFAFA] border-solid border-[0.6px] border-[#0000001A] rounded-md text-center w-[60%] p-1 m-auto">
                           Opens tomorrow at 12
                         </div>
                       )}
@@ -186,18 +186,18 @@ export default function Restaurant({
 
                     <div className="flex-grow flex items-end justify-between p-4">
                       <p
-                        className={`text-lg font-semibold ${
+                        className={`text-[24px] font-normal ${
                           restaurant.openOrClosed === "closed"
-                            ? "opacity-50"
+                            ? "opacity-50 relative bottom-3"
                             : ""
                         }`}
                       >
                         {restaurant.name}
                       </p>{" "}
                       <div
-                        className={`w-6 h-6 bg-[#00703A] rounded-full flex justify-center items-center ${
+                        className={`w-8 h-8 bg-[#00703A] rounded-full flex justify-center items-center ${
                           restaurant.openOrClosed === "closed"
-                            ? "opacity-50"
+                            ? "opacity-50 relative bottom-3"
                             : ""
                         }`}
                       >
