@@ -3,10 +3,10 @@ import React, { useState } from "react"
 import { Resturant } from "../lib/interface"
 import { urlFor } from "../lib/sanity"
 import Image from "next/image"
-import Restaurants from "../resturantslayout/page"
+import { Restaurant } from "../resturantslayout/page"
 
 export const LeftSideBar: React.FC<{
-  resturants: Resturant[] // Corrected spelling
+  resturants: Resturant[]
 }> = ({ resturants }) => {
   const [filteredRestaurants, setFilteredRestaurants] = useState<Resturant[]>(
     []
@@ -270,7 +270,7 @@ export const LeftSideBar: React.FC<{
         >
           Clear Filters
         </button>
-        <Restaurants
+        <Restaurant
           noResults={noResults}
           filteredRestaurants={filteredRestaurants}
           resturants={resturants}
