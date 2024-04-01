@@ -27,7 +27,7 @@ export default function Restaurants({
   return (
     <div className="flex">
       <div className="flex-grow md:flex-grow-0 bg-slate h-screen ">
-        <h2 className="text-4xl py-6">Restaurant's</h2>
+        <h2 className="text-4xl py-6">Restaurant&apos;s</h2>
         <div className="grid grid-cols-1 gap-4 md:gap-4 md:grid-cols-2 xl:grid-cols-3 ">
           {/* Display filtered restaurants if available, otherwise display all restaurants */}
           {filteredRestaurants.length > 0 ? (
