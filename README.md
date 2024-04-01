@@ -20,4 +20,4 @@ To run the Munchies project, follow these steps:
 ```
 
 npm install
-npm run dev s
+npm run dev
