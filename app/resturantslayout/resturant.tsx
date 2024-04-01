@@ -14,7 +14,7 @@ export default function Restaurant({
   resturants,
   filteredRestaurants,
   noResults
-}: Props): JSX.Element {
+}: Props) {
   // Function to sort filtered restaurants with closed ones last
   const sortFilteredRestaurants = (restaurants: Resturant[]) => {
     const openRestaurants = restaurants.filter(
