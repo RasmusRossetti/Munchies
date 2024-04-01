@@ -24,7 +24,7 @@ export default async function Layout() {
   const resturants: Resturant[] = await getResturants()
   console.log(resturants)
   return (
-    <div className="bg-[#FAFAFA] md:p-10 p-4 ">
+    <div className="bg-[#FAFAFA] md:p-10 p-4 max-w-[1440px] m-auto">
       <Navbar />
       <LeftSideBar resturants={resturants} />
     </div>
