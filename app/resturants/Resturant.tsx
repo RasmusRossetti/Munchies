@@ -40,7 +40,7 @@ export default function Restaurant({
                 >
                   {/* Restaurant card */}
                   <Link href="">
-                    <div className="mb-10 bg-white rounded-md shadow-md flex flex-col text-black w-full h-[202px] hover:bg-slate-100 transition-all">
+                    <div className=" bg-white rounded-md shadow-md flex flex-col text-black w-full h-[202px] hover:bg-slate-100 transition-all">
                       <div className="flex-none">
                         <div className="flex justify-between mb-4">
                           {/* Apply opacity styling if restaurant is closed */}
@@ -133,7 +133,7 @@ export default function Restaurant({
               <div key={index} className="w-full md:w-[327px]  transition-all">
                 {/* Restaurant card */}
                 <Link href="">
-                  <div className="mb-10 bg-white rounded-md shadow-md flex flex-col text-black w-full h-[202px] hover:bg-slate-100 transition-all">
+                  <div className=" bg-white rounded-md shadow-md flex flex-col text-black w-full h-[202px] hover:bg-slate-100 transition-all">
                     <div className="flex-none">
                       <div className="flex justify-between mb-4">
                         {/* Apply opacity styling if restaurant is closed */}
